@@ -21,6 +21,20 @@ rmdir "latihan4.txt"
 
 ```
 
+## Mini-Task-2 (cmd)
+#### memindahkan file lagu ke folder sesuai nama artis nya
+
+1. membuat folder sesuai nama artisnya
+```cmd
+for %i in ("Blackpink", "Linkin Park", "Evanescence") do mkdir %i
+```
+
+2. memindahkan file .mp3 ke folder sesuai nama artisnya
+```cmd
+for %i in (Blackpink, "Linkin Park", Evanescence) do move %i*.mp3 .\%i
+```
+
+
 ## Note
 ### Dokumentasi
 - Package Manager untuk install software https://scoop.sh/
