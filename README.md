@@ -57,13 +57,20 @@ for %i in (Blackpink, "Linkin Park", Evanescence) do move %i*.mp3 .\%i
 - untuk flowchart mermaid di https://mermaid.js.org/
 
 ### Basic Command
-- mkdir (create)
-- dir (read) 
-- rmdir (delete folder)
-- del (delete file)
-- cls (clear terminal)
-- cd (pindah directory)
-- echo (cetak task)
+
+| Perintah  | Fungsi                                        |
+|-----------|-----------------------------------------------|
+| `mkdir`   | Membuat folder/direktori baru                 |
+| `cd`      | Masuk ke direktori/folder tertentu            |
+| `cd ..`   | Naik satu level direktori                     |
+| `cd ~`    | Kembali ke direktori home                     |
+| `dir`     | Melihat isi direktori saat ini                |
+| `del`     | Menghapus file                                |
+| `rmdir`   | Menghapus folder kosong                       |
+| `echo`    | Menampilkan teks/output ke terminal           |
+| `cls`     | Membersihkan layar terminal                   |
+| `type`    | Melihat isi dari file teks                    |
+| `Tab`     | Auto-complete nama folder/file saat mengetik  |
 
 ### Loop di Powershell
 ```powershell
@@ -73,9 +80,21 @@ echo "command nya disini, Ex/: echo $1"
 }
 
 ```
-### cara mengakses directory menggunakkan cd
-1. ```cd ..\..\..```
-2. ```cd folder1\folder2\folder3```
-3. ```cd ~``` (untuk kembail ke home)
-4. ``` cd ``` + Tab untuk auto
+### Navigasi folder menggunakkan `cd`
 
+| Tujuan                          | Perintah                                |
+|----------------------------------|------------------------------------------|
+| Naik ke direktori atas          | `cd ..\..\..`                            |
+| Masuk ke folder bertingkat      | `cd folder1\folder2\folder3`             |
+| Kembali ke direktori Home user  | `cd ~`                                   |
+| Auto-complete saat ketik folder | Ketik `cd` lalu tekan `[Tab]`            |
+
+### Catatan Markdown
+
+| Fitur         | Syntax                                      |
+|---------------|----------------------------------------------|
+| Tautan        | `[teks](https://example.com)`                |
+| Gambar        | `![alt text](./gambar.jpg)`                  |
+| Tabel (dasar) | Gunakan `|` dan `-` untuk membuat baris tabel|
+| Code block    | Gunakan tiga backticks (```) di atas dan bawah kode |
+| Bold/Italic   | `**bold**`, `*italic*`, `~~strikethrough~~`  |
